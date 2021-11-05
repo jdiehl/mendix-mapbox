@@ -1,11 +1,11 @@
 import { Circle } from "phosphor-react";
 import { createElement, FC, ReactNode, useState } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
-import { ListValue, ListAttributeValue, ObjectItem } from "mendix";
+import { DynamicValue, ListValue, ListAttributeValue, ObjectItem } from "mendix";
 import Big from "big.js";
 
 interface MapContainerProps {
-    accessToken: string;
+    accessToken: DynamicValue<string>;
     width: string;
     height: string;
     markerList?: ListValue;
@@ -50,7 +50,7 @@ export const MapContainer: FC<MapContainerProps> = ({
 
     return (
         <ReactMapGL
-            mapboxApiAccessToken={accessToken}
+            mapboxApiAccessToken={accessToken.value}
             {...viewport}
             width={width || "100%"}
             height={height || "80vh"}

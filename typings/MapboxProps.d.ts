@@ -4,7 +4,7 @@
  * @author Mendix UI Content Team
  */
 import { CSSProperties } from "react";
-import { ListValue, ListAttributeValue } from "mendix";
+import { DynamicValue, ListValue, ListAttributeValue } from "mendix";
 import { Big } from "big.js";
 
 export interface MapboxContainerProps {
@@ -12,7 +12,7 @@ export interface MapboxContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    accessToken: string;
+    accessToken: DynamicValue<string>;
     markerList?: ListValue;
     latitudeAttr?: ListAttributeValue<Big>;
     longitudeAttr?: ListAttributeValue<Big>;

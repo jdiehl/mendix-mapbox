@@ -9,7 +9,7 @@
     "node": ">=12"
   },
   "config": {
-    "projectPath": "../../Mendix/MyTours-main/",
+    "projectPath": "/Volumes/[C] Windows 10/Users/Jonathan.Diehl/Documents/Mendix/MyTours-main/",
     "mendixHost": "http://localhost:8080",
     "developmentPort": "3000"
   },
