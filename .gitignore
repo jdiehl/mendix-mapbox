@@ -1,5 +1,5 @@
 dist/
 node_modules/
-..Mendix/Notbremse-main/
 *.log
 .env
+.DS_Store

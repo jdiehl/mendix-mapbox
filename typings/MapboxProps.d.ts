@@ -14,8 +14,8 @@ export interface MapboxContainerProps {
     tabIndex?: number;
     accessToken: string;
     markerList?: ListValue;
-    latitudeAttr: ListAttributeValue<Big>;
-    longitudeAttr: ListAttributeValue<Big>;
+    latitudeAttr?: ListAttributeValue<Big>;
+    longitudeAttr?: ListAttributeValue<Big>;
     width: string;
     height: string;
 }
@@ -24,7 +24,7 @@ export interface MapboxPreviewProps {
     class: string;
     style: string;
     accessToken: string;
-    markerList: {} | null;
+    markerList: {} | { type: string } | null;
     latitudeAttr: string;
     longitudeAttr: string;
     width: string;
