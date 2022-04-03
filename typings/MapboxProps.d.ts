@@ -12,7 +12,7 @@ export interface MapboxContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    accessToken: DynamicValue<string>;
+    mapboxToken: DynamicValue<string>;
     markerList?: ListValue;
     latitudeAttr?: ListAttributeValue<Big>;
     longitudeAttr?: ListAttributeValue<Big>;
@@ -21,9 +21,11 @@ export interface MapboxContainerProps {
 }
 
 export interface MapboxPreviewProps {
-    class: string;
+    className: string;
     style: string;
-    accessToken: string;
+    styleObject?: CSSProperties;
+    readOnly: boolean;
+    mapboxToken: string;
     markerList: {} | { type: string } | null;
     latitudeAttr: string;
     longitudeAttr: string;

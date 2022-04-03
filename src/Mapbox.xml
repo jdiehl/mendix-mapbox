@@ -9,7 +9,7 @@
     <properties>
         <propertyGroup caption="General">
             <propertyGroup caption="Mapbox">
-                <property key="accessToken" type="expression" required="true">
+                <property key="mapboxToken" type="expression" required="true">
                     <caption>Mapbox Access Token</caption>
                     <description>Get it here: https://account.mapbox.com</description>
                     <returnType type="String" />
