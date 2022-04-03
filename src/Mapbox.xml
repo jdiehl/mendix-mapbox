@@ -15,23 +15,36 @@
                     <returnType type="String" />
                 </property>
             </propertyGroup>
-            <propertyGroup caption="Datasource">
-                <property key="markerList" type="datasource" isList="true" required="false">
-                    <caption>List of Markers</caption>
+            <propertyGroup caption="Single Path">
+                <property key="pointList" type="datasource" isList="true" required="false">
+                    <caption>List of Points</caption>
                     <description />
                 </property>
-                <property key="latitudeAttr" type="attribute" required="true" dataSource="markerList">
+                <property key="latitudeAttr" type="attribute" required="true" dataSource="pointList">
                     <caption>Latitude</caption>
                     <description />
                     <attributeTypes>
                         <attributeType name="Decimal"/>
                     </attributeTypes>
                 </property>
-                <property key="longitudeAttr" type="attribute" required="true" dataSource="markerList">
+                <property key="longitudeAttr" type="attribute" required="true" dataSource="pointList">
                     <caption>Longitude</caption>
                     <description />
                     <attributeTypes>
                         <attributeType name="Decimal"/>
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Multiple Paths">
+                <property key="pathList" type="datasource" isList="true" required="false">
+                    <caption>List of Points</caption>
+                    <description />
+                </property>
+                <property key="pathAttr" type="attribute" required="true" dataSource="pathList">
+                    <caption>Latitude</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="String"/>
                     </attributeTypes>
                 </property>
             </propertyGroup>
